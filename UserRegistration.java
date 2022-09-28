@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 public class UserRegistration {
 
 	public static void main(String[] args) {
+		System.out.println("Regular Expression program to validate User Registration!!!");
 		UserRegistration userEntry = new UserRegistration();
 
 		userEntry.validateEntries();
