@@ -7,7 +7,6 @@ import java.util.regex.Pattern;
 public class UserRegistration {
 
 	public static void main(String[] args) {
-		System.out.println("Regular Expression program to validate User Registration!!!");
 		UserRegistration userEntry = new UserRegistration();
 
 		userEntry.validateEntries();
@@ -37,7 +36,7 @@ public class UserRegistration {
 	}
 	
 	private void validatePassword(String input) {
-		String password = "[0-9a-zA-Z]{8,}";
+		String password = "^(?=.*[A-Z])[0-9a-zA-Z]{8,}$";
 		
 		System.out.println("\nValidating Password...");
 		match(password, input);
